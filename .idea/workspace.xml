@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6d29b1-e70a-46f0-872a-51375e73b0f8" name="Changes" comment="" />
+    <list default="true" id="1a6d29b1-e70a-46f0-872a-51375e73b0f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/BaseContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/CustomerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/JacksonObjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/DishFlavor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Setmeal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/SetmealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/RiggieTakeOutApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/RiggieTakeOutApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/backend/page/demo/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/backend/page/demo/upload.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,35 +57,44 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MKWKmK9OehCsSvFGH8WCzHuwdN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "E:/springbootProject/riggie_take_out/src/main/resources/static",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "87780d738c85af5c1bb6659da53366c7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/springbootProject/riggie_take_out/src/main/java/com/wei/dto&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;87780d738c85af5c1bb6659da53366c7&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\dto" />
+      <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\entity" />
+      <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\common" />
       <recent name="E:\springbootProject\riggie_take_out\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\config" />
       <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\common" />
       <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\entity" />
     </key>
@@ -69,11 +117,30 @@
       <option name="presentableId" value="Default" />
       <updated>1677516698090</updated>
       <workItem from="1677516699425" duration="28702000" />
-      <workItem from="1677712067475" duration="626000" />
+      <workItem from="1677712067475" duration="29782000" />
+      <workItem from="1678399494564" duration="24706000" />
+      <workItem from="1678847068645" duration="3103000" />
+      <workItem from="1678915255011" duration="4858000" />
+      <workItem from="1678940132478" duration="624000" />
+      <workItem from="1678981465485" duration="9411000" />
+      <workItem from="1679339287288" duration="18316000" />
+      <workItem from="1679589518375" duration="8537000" />
+      <workItem from="1680020086086" duration="4920000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

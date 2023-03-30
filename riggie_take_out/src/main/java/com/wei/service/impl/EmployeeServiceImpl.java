@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wei.entity.Employee;
 import com.wei.mapper.EmployeeMapper;
 import com.wei.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,4 +14,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> implements EmployeeService {
+    @Autowired EmployeeMapper employeeMapper;
+    @Override
+    public Employee FindByUsername(String username) {
+        Employee employee = employeeMapper.getByUsername(username);
+        return employee;
+    }
 }

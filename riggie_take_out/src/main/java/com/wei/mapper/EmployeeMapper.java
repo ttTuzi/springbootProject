@@ -3,6 +3,7 @@ package com.wei.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wei.entity.Employee;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @Description: TODO
@@ -11,4 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface EmployeeMapper extends BaseMapper<Employee> {
+
+    @Select("select * from employee where username = #{username}")
+    Employee getByUsername(String username);
 }

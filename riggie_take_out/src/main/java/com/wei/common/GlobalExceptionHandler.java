@@ -31,10 +31,19 @@ public class GlobalExceptionHandler {
         if(exception.getMessage().contains("Duplicate entry")){
             String[] split = exception.getMessage().split(" ");
             String msg = split[2]+"already exist";
-            R.error(msg);
+            return R.error(msg);
         }
 
         return R.error("Unknown error");
+    }
+
+    @ExceptionHandler(CustomerException.class)
+    public R<String> exceptionHandler(CustomerException exception){
+        log.error(exception.getMessage());
+
+
+
+        return R.error(exception.getMessage());
     }
 
 }

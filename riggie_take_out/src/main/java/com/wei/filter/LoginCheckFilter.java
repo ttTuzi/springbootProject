@@ -2,6 +2,7 @@ package com.wei.filter;
 
 import com.alibaba.druid.support.json.JSONWriter;
 import com.alibaba.fastjson2.JSON;
+import com.wei.common.BaseContext;
 import com.wei.common.R;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
@@ -37,7 +38,8 @@ public class LoginCheckFilter implements Filter {
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
+                "/common/**"
         };
 
         //2.判断本次请求是否需要处理
@@ -46,6 +48,8 @@ public class LoginCheckFilter implements Filter {
         //3.如果不需要处理,放行
         if(check){
             log.info("本次请求{}不需要处理",requestURI);
+            long id = Thread.currentThread().getId();
+            log.info("线程id为, {}",id);
             filterChain.doFilter(request,response);
             return;
         }
@@ -53,6 +57,10 @@ public class LoginCheckFilter implements Filter {
         //4.如果需要处理,在判断是否登入,如果登入放行
         if(request.getSession().getAttribute("employee")!=null){
             log.info("用户已登入,用户id为: {}",request.getSession().getAttribute("employee"));
+
+            Long empId=(Long) request.getSession().getAttribute("employee");
+            BaseContext.setCurrentId(empId);
+
             filterChain.doFilter(request,response);
             return;
         }
