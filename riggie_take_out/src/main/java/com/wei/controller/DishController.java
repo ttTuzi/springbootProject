@@ -6,6 +6,7 @@ import com.wei.common.R;
 import com.wei.dto.DishDto;
 import com.wei.entity.Category;
 import com.wei.entity.Dish;
+import com.wei.entity.DishFlavor;
 import com.wei.service.CategoryService;
 import com.wei.service.DishFlavorService;
 import com.wei.service.DishService;
@@ -86,6 +87,61 @@ public class DishController {
 //        dishService.page(pageInfo,queryWrapper);
 
         return R.success(pageDtoInfo);
+    }
+
+    /**
+     * according to id, search for dish and flavor info
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public R<DishDto> get(@PathVariable Long id){
+        DishDto dishDto = dishService.getByIdWithFlavor(id);
+        return R.success(dishDto);
+    }
+
+    /**
+     * update dish
+     * @param dishDto
+     * @return
+     */
+    @PutMapping
+    public R<String> update (@RequestBody DishDto dishDto) {
+        log.info(dishDto.toString());
+        //dishService.updateById(dishDto);
+        //dishService.saveWithFlavor(dishDto);
+        dishService.updateById(dishDto);
+
+        //remove all the flavor
+        LambdaQueryWrapper<DishFlavor> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(DishFlavor::getDishId,dishDto.getId());
+        dishFlavorService.remove(queryWrapper);
+
+        //add new flavor, and assign dish id to each flavor
+        List<DishFlavor> flavors = dishDto.getFlavors();
+        Long id = dishDto.getId();
+        for (DishFlavor flavor : flavors) {
+            flavor.setDishId(id);
+        }
+        log.info("hereservice");
+        dishFlavorService.saveBatch(flavors);
+        return R.success("dish added success");
+    }
+
+    /**
+     * get dishes by different category
+     * @param dish
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Dish>> list(Dish dish){
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(dish.getCategoryId()!=null, Dish::getCategoryId,dish.getCategoryId());
+        //1 is for status, means on sale
+        queryWrapper.eq(Dish::getStatus,1);
+        queryWrapper.orderByAsc(Dish::getSort).orderByAsc(Dish::getUpdateTime);
+        List<Dish> list = dishService.list(queryWrapper);
+        return R.success(list);
     }
 
 }
