@@ -83,4 +83,9 @@ public class SetmealController {
         return R.success("deletion success");
     }
 
+    @PostMapping("/test")
+    public R<String> test(){
+        return null;
+    }
+
 }

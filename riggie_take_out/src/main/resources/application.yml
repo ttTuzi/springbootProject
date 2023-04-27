@@ -8,6 +8,21 @@ spring:
     username: root
     password: root
 
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: MirageCinema@outlook.com
+    password: Csci4050123
+    properties:
+      mail:
+        smtp:
+          connecttimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+          auth: true
+          starttls:
+            enable: true
+
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
