@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6d29b1-e70a-46f0-872a-51375e73b0f8" name="Changes" comment="add meal, delete meal, edit meal, and view meal.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_jakarta_mail_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_6_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/EmailDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/utils/ValidateCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/AddressBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/AddressBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/AddressBookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/AddressBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/DishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/page/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/api/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +78,10 @@
       <recent name="E:\springbootProject\riggie_take_out\src\main\java\com\wei\entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wei.service.impl" />
+      <recent name="com.wei.controller" />
       <recent name="com.wei.service" />
+      <recent name="com.wei.service.impl" />
+      <recent name="com.wei.mapper" />
       <recent name="com.wei.entity" />
     </key>
   </component>
@@ -121,7 +120,9 @@
       <workItem from="1681938327145" duration="9778000" />
       <workItem from="1682359203152" duration="4136000" />
       <workItem from="1682539819065" duration="105000" />
-      <workItem from="1682565603118" duration="317000" />
+      <workItem from="1682565603118" duration="2539000" />
+      <workItem from="1684377724863" duration="2157000" />
+      <workItem from="1694378342080" duration="9659000" />
     </task>
     <task id="LOCAL-00001" summary="a lot update">
       <created>1680135586263</created>
@@ -144,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680888088350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add meal, delete meal, edit meal, and view meal.">
+      <created>1682565946645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682565946645</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

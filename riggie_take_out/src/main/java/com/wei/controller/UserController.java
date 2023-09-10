@@ -43,7 +43,7 @@ public class UserController {
         if (StringUtils.isNotEmpty(email)){
             //generate random code
             String code = ValidateCodeUtils.generateValidateCode(4).toString();
-
+            log.info(code);
             //send email
             EmailDetails emailDetails = new EmailDetails();
             emailDetails.setSubject("verification code");
@@ -60,6 +60,12 @@ public class UserController {
         return R.success("code sent");
     }
 
+    /**
+     *
+     * @param map: contain email and code
+     * @param session
+     * @return
+     */
     @PostMapping("/login")
     public R<User> login(@RequestBody Map map, HttpSession session){
         //get email

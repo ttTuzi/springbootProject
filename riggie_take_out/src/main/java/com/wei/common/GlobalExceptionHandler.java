@@ -40,9 +40,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(CustomerException.class)
     public R<String> exceptionHandler(CustomerException exception){
         log.error(exception.getMessage());
-
-
-
         return R.error(exception.getMessage());
     }
 
