@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a6d29b1-e70a-46f0-872a-51375e73b0f8" name="Changes" comment="add meal, delete meal, edit meal, and view meal.">
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/AddressBookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/AddressBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/AddressBookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/ShoppingCartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/AddressBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/ShoppingCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/AddressBookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+    <list default="true" id="1a6d29b1-e70a-46f0-872a-51375e73b0f8" name="Changes" comment="add shopping cart, addressbook">
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/dto/OrdersDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/common/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/resources/static/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/riggie_take_out/src/main/java/com/wei/service/ShoppingCartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +75,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wei.controller" />
-      <recent name="com.wei.service" />
       <recent name="com.wei.service.impl" />
+      <recent name="com.wei.service" />
       <recent name="com.wei.mapper" />
-      <recent name="com.wei.entity" />
+      <recent name="com.wei.dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,7 +118,7 @@
       <workItem from="1682539819065" duration="105000" />
       <workItem from="1682565603118" duration="2539000" />
       <workItem from="1684377724863" duration="2157000" />
-      <workItem from="1694378342080" duration="9659000" />
+      <workItem from="1694378342080" duration="12753000" />
     </task>
     <task id="LOCAL-00001" summary="a lot update">
       <created>1680135586263</created>
@@ -152,11 +148,29 @@
       <option name="project" value="LOCAL" />
       <updated>1682565946645</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add shopping cart, addressbook">
+      <created>1694389657126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694389657126</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -172,6 +186,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a lot update" />
     <MESSAGE value="add meal, delete meal, edit meal, and view meal." />
-    <option name="LAST_COMMIT_MESSAGE" value="add meal, delete meal, edit meal, and view meal." />
+    <MESSAGE value="add shopping cart, addressbook" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shopping cart, addressbook" />
   </component>
 </project>
